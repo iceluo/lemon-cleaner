@@ -206,12 +206,12 @@ typedef char (*SMLoginItemSetEnabledWithURL_ptr) ( void* ptr, char enabled);
     if (!bundleId) {
         return NO;
     }
-    CFDictionaryRef dict = SMJobCopyDictionary(kSMDomainUserLaunchd, (__bridge CFStringRef)bundleId);
+//    CFDictionaryRef dict = SMJobCopyDictionary(kSMDomainUserLaunchd, (__bridge CFStringRef)bundleId);
 //    NSLog(@"%s, dict = %@",__FUNCTION__, dict);
-    if (dict == NULL) {
-        return NO;
-    }
-    CFRelease(dict);
+//    if (dict == NULL) {
+//        return NO;
+//    }
+//    CFRelease(dict);
     return YES;
 }
 

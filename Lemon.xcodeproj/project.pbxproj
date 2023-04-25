@@ -238,6 +238,7 @@
 		BC7FBE402268195600D025CF /* LMSplashMainAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7FBE3F2268195600D025CF /* LMSplashMainAppViewController.m */; };
 		BCD2CBF121806BEA005C2990 /* register_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCD2CBF021806BE9005C2990 /* register_bg@2x.png */; };
 		BCD2CBF321806BF8005C2990 /* register_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCD2CBF221806BF8005C2990 /* register_bg@3x.png */; };
+		C7E9B7CA29F7DACF005CF838 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E9B7C929F7DACF005CF838 /* AFNetworking.framework */; };
 		D462677921DDD0E0005BC358 /* Lemonas-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D462677821DDD0E0005BC358 /* Lemonas-Info.plist */; };
 		D46267D021DDEEA4005BC358 /* LemonDaemon in Copy Files */ = {isa = PBXBuildFile; fileRef = D46267A921DDED73005BC358 /* LemonDaemon */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D46267D221DDEEA4005BC358 /* LemonDaemonActivator in Copy Files */ = {isa = PBXBuildFile; fileRef = D46267AD21DDED73005BC358 /* LemonDaemonActivator */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -762,6 +763,7 @@
 		BC7FBE3F2268195600D025CF /* LMSplashMainAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSplashMainAppViewController.m; sourceTree = "<group>"; };
 		BCD2CBF021806BE9005C2990 /* register_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "register_bg@2x.png"; sourceTree = "<group>"; };
 		BCD2CBF221806BF8005C2990 /* register_bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "register_bg@3x.png"; sourceTree = "<group>"; };
+		C7E9B7C929F7DACF005CF838 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D462677821DDD0E0005BC358 /* Lemonas-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Lemonas-Info.plist"; sourceTree = "<group>"; };
 		D46267A221DDED72005BC358 /* LemonDaemon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LemonDaemon.xcodeproj; path = Tools/LemonDaemon/LemonDaemon.xcodeproj; sourceTree = "<group>"; };
 		D462686F21DE0924005BC358 /* LemonMonitor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LemonMonitor.xcodeproj; path = Tools/LemonMonitor/LemonMonitor.xcodeproj; sourceTree = "<group>"; };
@@ -952,6 +954,7 @@
 				D4B726682140C4E7003B59B5 /* Security.framework in Frameworks */,
 				D4F3EDA22134EC80000E29B4 /* LemonClener.framework in Frameworks */,
 				27F03C760B91BC7EB8036175 /* Pods_Lemon.framework in Frameworks */,
+				C7E9B7CA29F7DACF005CF838 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1479,6 +1482,7 @@
 		F3CE2EDAF3E0606707991977 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C7E9B7C929F7DACF005CF838 /* AFNetworking.framework */,
 				DE65AE462760B2F0007D4292 /* CoreLocation.framework */,
 				DE65AE442760B2E9007D4292 /* libc++.tbd */,
 				DE65AE422760B2DD007D4292 /* libc.tbd */,
@@ -2378,15 +2382,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AABB39B505F3F27400C594F3 /* Pods-Lemon.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Lemon/Tencent Lemon.entitlements";
-				CODE_SIGN_IDENTITY = "Developer ID Application: Tencent Technology (Shenzhen) Company Limited (88L2Q4487U)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 60;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GB8FE8WWF8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2439,15 +2443,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 90072B757471067B640ECCE6 /* Pods-Lemon.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Lemon/Tencent Lemon.entitlements";
-				CODE_SIGN_IDENTITY = "Developer ID Application: Tencent Technology (Shenzhen) Company Limited (88L2Q4487U)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 60;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GB8FE8WWF8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

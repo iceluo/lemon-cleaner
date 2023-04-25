@@ -49,7 +49,6 @@
 		BCF3875621EF27B20031A2FD /* LMMemoryCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF3875521EF27B20031A2FD /* LMMemoryCellView.m */; };
 		D432EF3221707F110034BC25 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D432EF3121707F110034BC25 /* libz.tbd */; };
 		D432EF3421707F4A0034BC25 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D432EF3321707F490034BC25 /* libstdc++.tbd */; };
-		D47D64C1215D22BF00E411AE /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47D64C0215D22BF00E411AE /* AFNetworking.framework */; };
 		D49FA4CE21DDA4D7004A416E /* PrivacyProtect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49FA4C921DDA2A3004A416E /* PrivacyProtect.framework */; };
 		D49FA4CF21DDA4D7004A416E /* PrivacyProtect.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = D49FA4C921DDA2A3004A416E /* PrivacyProtect.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DE27949C26A038BE007B4443 /* LMUpdatePopoverBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE27949A26A038BE007B4443 /* LMUpdatePopoverBackgroundView.m */; };
@@ -207,6 +206,7 @@
 		BCF3875121EEEDD90031A2FD /* LMSystemFeatureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSystemFeatureViewController.m; sourceTree = "<group>"; };
 		BCF3875421EF27B20031A2FD /* LMMemoryCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMMemoryCellView.h; sourceTree = "<group>"; };
 		BCF3875521EF27B20031A2FD /* LMMemoryCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMMemoryCellView.m; sourceTree = "<group>"; };
+		C7E9B7BA29F7D905005CF838 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D432EF3121707F110034BC25 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		D432EF3321707F490034BC25 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		D47D64BB215D203700E411AE /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -238,7 +238,6 @@
 			files = (
 				D432EF3421707F4A0034BC25 /* libstdc++.tbd in Frameworks */,
 				D432EF3221707F110034BC25 /* libz.tbd in Frameworks */,
-				D47D64C1215D22BF00E411AE /* AFNetworking.framework in Frameworks */,
 				84ADF214212EADE500B8C9C6 /* LemonClener.framework in Frameworks */,
 				D49FA4CE21DDA4D7004A416E /* PrivacyProtect.framework in Frameworks */,
 				B8B6CAF8198B8EA000946160 /* QuartzCore.framework in Frameworks */,
@@ -385,6 +384,7 @@
 		B8F110431962572100D29FFC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C7E9B7BA29F7D905005CF838 /* AFNetworking.framework */,
 				D432EF3321707F490034BC25 /* libstdc++.tbd */,
 				D432EF3121707F110034BC25 /* libz.tbd */,
 				D47D64BB215D203700E411AE /* AFNetworking.framework */,
@@ -926,6 +926,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_ENTITLEMENTS = LemonMonitor/LemonMonitor.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application: Tencent Technology (Shenzhen) Company Limited (88L2Q4487U)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1008,6 +1009,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_ENTITLEMENTS = LemonMonitor/LemonMonitor.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application: Tencent Technology (Shenzhen) Company Limited (88L2Q4487U)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
